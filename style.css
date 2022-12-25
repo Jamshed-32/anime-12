@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    outline: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    overflow: hidden;
+    background-image: url(./img/th.jpg);
+    background-size: cover;
+    
+}
+
+img{
+    
+    width: 30%;
+    height: auto;
+    position: relative;
+    margin-top: 100px;
+    animation: fly 3s linear infinite;
+}
+@keyframes fly {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 15%;
+        transform: translate(0);
+
+    }
+    45%{
+        left: 0;
+        transform: translate(-70px)
+    }
+    65%{
+        left: 0;
+        transform: translate(-150px)
+    }
+    100%{
+        left: 100%;
+        transform: translate(-250px)
+    }
+}
+
+    
+
+    
+
